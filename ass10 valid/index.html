@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book mark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+    <div class="container text-center p-3">
+
+        <h1 class="mt-5 mb-4">Bookmarker</h1>
+        <div class="hr"></div>
+        <h2><i class="fa-solid fa-bookmark px-2"></i>Bookmark your favorite sites<i
+                class="fa-solid fa-bookmark px-2"></i></h2>
+        <form>
+            <div class="p-3 text-start" id="input1v">
+                <label for="sitename" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i> Site
+                    Name</label>
+                <input type="text" name="bookname" id="sitename" class="form-control1" placeholder="Bookmark Name" />
+            </div>
+            <div class="p-3 pb-2 mb-3 text-start" id="input2v">
+                <label for="site" class="form-label"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="url" name="booksite" id="site" class="form-control1" placeholder="Websit URL" />
+            </div>
+        </form>
+
+        <button type="button" class="btn btn-submit px-5 py-2" onclick="submit()">Submit</button>
+        <div class="hr my-4"></div>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tabledata">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>book</td>
+                    <td><a href="" class="text-decoration-none"> <button class="btn btn-visit" type="button"><i class="fa-solid fa-eye pe-2"></i> Visit</button></td></a>
+                    <td><button class="btn btn-delete" type="button"> <i class="fa-solid fa-trash pe-2"></i>Delete</button></td>
+                  
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modaal justify-content-center align-items-center d-none" id="modaal">
+        <div class="modaal-inner rounded-2 px-4 py-3">
+            <div class="modal-header d-flex justify-content-between ">
+                <img src="images/Capture.PNG" class="col-3 " alt="">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+            </div>
+            <div class="modaal-body my-3 ps-2">
+                <p>Site Name or Url is not valid, Please follow the rules below :</p>
+            </div>
+            <div class="modaal-footer ps-2">
+                <p><i class="fa-regular fa-circle-right pe-2"></i>Site name must contain at least 3 characters</p>
+                <p><i class="fa-regular fa-circle-right  pe-2"></i>Site URL must be a valid one</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
