@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container ">
+            <a class="navbar-brand ms-5 ps-3 text-decoration-none position-relative" href="#">
+                <img src="images/logo@2x.png" class="col-5" alt="">
+                <span class="logo">weather</span> <br />
+                <span class="under_logo">tagline goes here</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 pe-5">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link1" href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link1" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link1" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link1" href="https://routeweather.netlify.app/contact">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="position-relative">
+        <div class="item"></div>
+        <div class="item2"></div>
+
+        <div class="container ">
+            <div class="data position-absolute">
+                <div class="mb-5 mx-5 position-relative ">
+
+                    <input type="text" placeholder="Find your location" class="form-control1 rounded-pill text-white">
+                    <button class="btn btn-blue rounded-pill  position-absolute"> Find</button>
+                </div>
+                <div class="  mx-5 ">
+                    <div class="row g-0 " id="mydata">
+                        <!-- <div class="col-lg-4 col-12 " id="today">
+                            <div class="today-header d-flex justify-content-between px-3  align-items-center ">
+                                <div>Sunday</div>
+                                <div>23 june</div>
+                            </div>
+                            <div class="today-content  px-3 py-4  ">
+                                <span>Cairo</span>
+                                <h2 class="my-3">32.33 c</h2>
+                               <img src="images/icon-compass.png"class="iconImage" alt="">
+                                <br />
+                                <br />
+                                <span class="mode">sunny</span>
+                                <div class="d-flex">
+                                    <div class="mt-3 me-3">
+                                        <i class="fa-solid fa-umbrella"></i>
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="mt-3 me-3">
+                                        <i class="fa-solid fa-wind"></i>
+                                        <span>18km/h</span>
+
+                                    </div>
+                                    <div class="mt-3 me-3">
+                                        <i class="fa-regular fa-compass"></i>
+                                        <span>East</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12   " id="forecast ">
+                            <div
+                                class="forecast-header text-center px-3 d-flex align-items-center justify-content-center  ">
+                                <div>Monday</div>
+
+                            </div>
+                            <div class="forecast-content  text-center  ">
+
+                                <img src="images/icon-compass.png"class="iconImage2" alt="">
+
+                                <h2 class="mt-4 mb-2  text-white">32.33 c</h2>
+                                <h3 class="mb-3">43 c</h3>
+
+                                <span class="mode">sunny</span>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12   " id="forecast2 ">
+                            <div
+                                class="forecast2-header text-center px-3 d-flex align-items-center justify-content-center  ">
+                                <div>tuesday</div>
+
+                            </div>
+                            <div class="forecast2-content  text-center  ">
+
+                                <img src="images/icon-compass.png"class="iconImage2" alt="">
+                                <h2 class="mt-4 mb-2  text-white">32.33 c</h2>
+                                <h3 class="mb-3">43 c</h3>
+
+                                <span class="mode">sunny</span>
+
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row mx-4">
+                <div class="pt-5  position-relative col-lg-8 col-12 ps-4" id="foot">
+
+                    <input type="email" placeholder="Enter your email to subscribe"
+                        class="form-control2 rounded-pill text-white">
+                    <button class="btn btn-blue rounded-pill  position-absolute"> Subscribe</button>
+                </div>
+                <div class="d-flex justify-content-center pt-5  col-lg-4 col-12 ">
+                    <div class="footiccon mx-1 my-1">
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </div>
+
+                    <div class="footiccon mx-1 my-1">
+                        <i class="fa-brands fa-twitter"></i>
+
+                    </div>
+                    <div class="footiccon mx-1 my-1">
+                        <i class="fa-brands fa-google-plus-g"></i>
+
+                    </div>
+                    <div class="footiccon mx-1 my-1">
+                        <i class="fa-brands fa-pinterest-p"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" copyrights mt-4 ms-5 pb-5">
+
+
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
