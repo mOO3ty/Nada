@@ -1,0 +1,310 @@
+:root {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: auto;
+}
+body{
+    overflow: hidden;
+}
+#home {
+    height: 90vh;
+    background-image: linear-gradient(rgba(224, 49, 40, 0.6), rgba(224, 49, 40, 0.6), rgba(224, 49, 40, 0.6)), url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+
+
+.navs {
+    background-color: black;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom:  0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+   
+}
+.navs i {
+    font-size: 1.5625rem;
+    color: white;
+    text-align: end;
+    padding: 25px 25px 0px ;
+    transition:color 0.2s;
+    cursor:pointer;
+   
+
+}
+.navs a {
+    color: white;
+
+    text-decoration: none;
+    font-size: 1.5625rem;
+    margin: 1.5rem;
+    transition:color 0.2s;
+    
+    
+}
+
+.navs i:hover , .navs a:hover{
+    color: #8C2123;
+}
+.mainHome{
+    display: flex;
+    height:70vh; 
+    justify-content: center;
+    align-items: center;
+}
+.mainContent{
+    height:70vh;  
+    width: 90%; /**/
+    /* width: 60%; */
+    /* background-color: green; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: 150px; /**/
+
+
+}
+
+.mainHome h1 {
+    font-size: 3.75rem;
+    font-weight: 500;
+    /* margin-left:100px ; */
+}
+
+/* .mainHome p {   */
+    /* margin-left:100px ; */
+/* } */
+
+.navOpen {
+    /* background-color: red; */
+    /* text-align: center; */
+    text-align: start;  /**/
+   margin-top:190px;
+   padding: 15px;
+    cursor: pointer;
+    width: 10%;  
+}
+
+.navOpen i {
+    color: white;
+    font-size: 1ch;
+padding: 5px;
+
+}
+
+.navOpen span {
+    color: white;
+    font-size: 1rem;
+}
+
+#dropDown h2{
+    background-color: #e68285;
+    color: white;
+    margin-bottom: 0;
+    padding-block: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+#dropDown div{
+    background-color: #ccc;
+    padding: 10px ;
+display: none;
+ 
+}
+#dropDown  .firstslide{
+    display: block;
+}
+
+#duration{
+   height:350px;
+   background-image: linear-gradient(rgba(212, 59, 51, 0.521), rgba(212, 59, 51, 0.521)), url(../images/invitation-2508607__340.jpg);
+   background-size: 100% 100%;
+   background-position:center ;
+display: flex;
+padding-inline: 150px;
+margin-block: 3.125rem;
+}
+
+#duration div{
+width: 270px;
+height: 150px;
+margin: auto;
+border: 1px solid white;
+color: white;
+font-size: 30px;
+font-weight: 500;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ 
+#Contact h2{
+
+    font-size: 35px;
+    font-weight: 700;
+    color: #444;
+}
+ 
+#Contact p{
+
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+}
+
+#Contact .row h3{
+    font-size: 18px;
+    font-weight: 900;
+    padding-block: 10px;
+}
+
+.contactsection{
+    margin:90px;
+    padding-top: 50px;
+}
+.contlocation{
+    margin:2rem; 
+    text-align: center;
+    color: #777;
+}
+.contlocation i {
+    padding-right: 15px;
+}
+.mailcont{ 
+    
+    color: #D62E33 ;
+}
+.iconsmedia{
+
+    padding-top: 16px;
+}
+#Contact .iconsmedia i{
+    width: 40px;
+    height: 40px;
+    border: .0625rem solid #777;
+    color: #777;
+    margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+cursor: pointer;
+}
+#Contact .iconsmedia i:hover{
+    color: white ;
+    background-color: #D62E33;
+
+
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+   
+    border-radius: 0;
+}
+
+textarea{
+
+    height: 200px;
+}
+
+::placeholder{
+    color: #777;
+}
+
+#Contact .item2 p span{
+    font-size: 20px;
+    color: #D62E33 ;
+  font-weight: 400;
+}
+
+#Contact .item2 p{
+    font-size: 16px;
+    color: black;
+  font-weight: 400;
+}
+
+#Contact .item2 button{
+    background-color: #D62E33;
+color: white;
+padding:10px 23px;
+border: transparent;
+outline: transparent;
+}
+
+/* ///////////////////////////////////////loading screen ////////*/
+.loadingScreen{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8C2123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid white;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: white transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
